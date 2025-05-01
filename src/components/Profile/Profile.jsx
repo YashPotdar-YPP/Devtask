@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Box, CssBaseline, Typography, Badge, Avatar } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import User from "../../assets/user.png";

@@ -13,7 +13,6 @@ import {
 import { useNavigate } from "react-router-dom";
 
 export default function SignUp() {
-  const [btnColorChange, setBtnColor] = useState(false);
   const navigate = useNavigate();
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
@@ -28,10 +27,13 @@ export default function SignUp() {
   const [passwordError, setPasswordError] = useState(false);
   const [companyError, setCompanyError] = useState(false);
   const handleLogin = () => {
+    setNameError(name === "");
+    setPhoneError(phone === "");
     setEmailError(email === "");
     setPasswordError(password === "");
+    setCompanyError(company === "");
 
-    if (email && password) {
+    if (name && phone && email && password && company) {
       navigate("/profile");
     }
   };
@@ -95,7 +97,7 @@ export default function SignUp() {
 
             <Box sx={{ width: "100%", p: "3%" }}>
               <TextField
-                type="text"
+                type="number"
                 label="Phone Number"
                 placeholder="Enter Phone Number"
                 fullWidth

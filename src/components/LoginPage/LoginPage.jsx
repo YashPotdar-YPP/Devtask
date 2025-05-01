@@ -3,7 +3,6 @@ import { Box, CssBaseline, Typography, Button, TextField } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 
 export default function LoginPage() {
-  const [btnColorChange, setBtnColor] = useState(false);
   const naigate = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
