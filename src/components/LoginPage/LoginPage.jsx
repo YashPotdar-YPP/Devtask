@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Box, CssBaseline, Typography, Button, TextField } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 
@@ -18,7 +18,6 @@ export default function LoginPage() {
       // Continue to next step
     }
   };
-
   return (
     <>
       <CssBaseline />
