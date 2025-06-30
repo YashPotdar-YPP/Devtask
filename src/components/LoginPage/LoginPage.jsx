@@ -92,6 +92,7 @@ export default function LoginPage() {
               />
             </Box>
 
+            {/* Login Button */}
             <Box>
               <Button
                 onClick={handleLogin}
